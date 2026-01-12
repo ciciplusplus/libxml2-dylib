@@ -1,3 +1,6 @@
 [submodule "libxml2"]
 	path = libxml2
 	url = https://github.com/apple-oss-distributions/libxml2.git
+[submodule "zlib-src"]
+	path = zlib-src
+	url = https://github.com/apple-oss-distributions/zlib
