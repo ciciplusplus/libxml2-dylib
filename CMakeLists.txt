@@ -18,6 +18,18 @@ endif()
 
 set(libxml2_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/libxml2")
 
+# Copy pregenerated files
+configure_file(
+    ${CMAKE_CURRENT_SOURCE_DIR}/pregenerated/config.h
+    ${libxml2_SOURCE_DIR}/libxml2/config.h
+    COPYONLY
+)
+configure_file(
+    ${CMAKE_CURRENT_SOURCE_DIR}/pregenerated/xmlversion.h
+    ${libxml2_SOURCE_DIR}/libxml2/include/libxml/xmlversion.h
+    COPYONLY
+)
+
 set(LIBXML2_SOURCES
     ${libxml2_SOURCE_DIR}/libxml2/SAX.c
     ${libxml2_SOURCE_DIR}/libxml2/entities.c
