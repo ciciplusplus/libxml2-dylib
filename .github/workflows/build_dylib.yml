@@ -30,7 +30,7 @@ jobs:
 
     - name: Download libz dylib
       run: |
-        curl -L "https://github.com/touchHLE/zlib-dylib/releases/download/v0.3.0/libz.1.2.3.dylib"
+        curl -o libz.1.2.3.dylib "https://github.com/touchHLE/zlib-dylib/releases/download/v0.3.0/libz.1.2.3.dylib"
       
     - name: Configure CMake
       env:
