@@ -20,7 +20,9 @@ jobs:
       SDK_REPO: "touchHLE/common-3.0-sdk"
       
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v6
+      with:
+        submodules: 'true'
 
     - name: Download SDK
       run: |
