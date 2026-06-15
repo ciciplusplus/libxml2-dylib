@@ -88,7 +88,7 @@ target_include_directories(${LIB_NAME}
 # add_definitions(-D_POSIX_C_SOURCE=200809L)
 
 set_target_properties(${LIB_NAME} PROPERTIES
-    OUTPUT_NAME "xml2.${VERSION}"
+    OUTPUT_NAME "xml2.2"
     VERSION ${VERSION}
     MACHO_COMPATIBILITY_VERSION ${COMPAT_VERSION}
     INSTALL_NAME_DIR "${INSTALL_PATH}"

@@ -43,12 +43,12 @@ jobs:
     
     - uses: actions/upload-artifact@v4
       with:
-        name: libxml2.10.8.0.dylib
-        path: build/libxml2.10.8.0.dylib
+        name: libxml2.2.dylib
+        path: build/libxml2.2.dylib
 
     - name: Create Release
       uses: softprops/action-gh-release@v2
       if: startsWith(github.ref, 'refs/tags/')
       with:
-        files: build/libxml2.10.8.0.dylib
+        files: build/libxml2.2.dylib
 
